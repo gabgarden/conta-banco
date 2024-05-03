@@ -39,18 +39,16 @@ public class ContaTerminal {
         conta.setSaldo(random.nextDouble());
 
 
-
-        System.out.println("Temos aqui um cadastro encontrado em nome de " + conta.getNomeCliente() );
-        System.out.println("Numero de conta: " + conta.getNumeroConta());
-        System.out.println("Numero de agencia: " + conta.getAgencia());
-        System.out.println("Saldo disponível para saque: " + conta.getSaldo());
+        System.out.println("Olá " + conta.getNomeCliente() + ", obrigado por criar uma conta em nosso banco, " +
+                "sua agência é "+ conta.getAgencia() + ", conta " + conta.getNumeroConta() + ", e seu saldo R$" + conta.getSaldo() +
+                " já está disponível para saque.");
 
 
          scanner.close();
 
 
 
-       
+
 
     }
 }
